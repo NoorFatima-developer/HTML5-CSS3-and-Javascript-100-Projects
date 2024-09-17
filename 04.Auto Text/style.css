@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+}
+
+p {
+    font-size: 3rem;
+
+}
+
+.js {
+    color: yellow;
+}
+
+.typed-text {
+    color: rgb(73, 167, 73);
+}
+
+.cursor {
+    background: rgb(73, 167, 73);;
+}
