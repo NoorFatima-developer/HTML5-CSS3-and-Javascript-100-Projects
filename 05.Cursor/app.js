@@ -1,6 +1,8 @@
+
+//html elemement woth class cursor stores in cursor variable
 const cursor = document.querySelector(".cursor");
 
-
+//this adds an event listener to the entire document for the mousemove event.
 document.addEventListener("mousemove", function(event) {
    
     // event.pageX --> across
