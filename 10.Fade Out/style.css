@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, 
+body { 
+    height: 200vh;
+    width: 100%;
+    background-color: black;
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.sub-heading {
+    max-width: 700px;
+    line-height: 30px;
+    font-family: sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+
+    margin-top: 50px;
+    margin-bottom: 6rem;
+    color: white;
+    font-size: 4rem;
+}
+
+.arrow {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: ease-in;
+    bottom: 30px;
+    margin: auto;
+    position: absolute;
+    animation: bounce 1.5s infinite ;
+}
+
+.arrow::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    height: 12px;
+    width: 12px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+
+}
+
+
+@keyframes bounce {
+
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}
+
+
+@-webkit-keyframes bounce {
+    
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}
+
+.fade-in {
+    opacity: 1;
+    transition: 1s all ease-in;
+}
+.fade-out {
+    opacity: 0;
+    transition: 1s all ease-out;
+}
